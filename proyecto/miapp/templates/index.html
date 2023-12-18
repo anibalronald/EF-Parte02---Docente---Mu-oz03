@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/estilo.css' %}"
+    />
+    <title>Examen Final LP3</title>
+  </head>
+  <body>
+      <style>
+          body{
+              background: rgba(71,147,227,1);
+          }
+      </style> 
+    <header class="header-outer">
+      <div class="header-inner responsive-wrapper">
+        <div class="header-logo">
+          <a href="/"><img src="{% static 'img/logountels.png'%}" /></a>
+        </div>
+        <nav class="header-navigation">
+          <a href="/inicio">Inicio</a>
+          <a href="/integrantes">Integrantes</a>
+          <a href="/creardocente">Crear Docente</a>
+          <a href="/listardocente">Listar Docentes</a>
+          <a href="/crearcurso">Crear Curso</a>
+          <a href="/listarcurso">Listar Curso</a>
+          <button>Menu</button>
+        </nav>
+      </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>
